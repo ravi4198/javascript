@@ -72,3 +72,14 @@ const output1 = users.reduce((acc, curr) => {
 }, {});
 
 console.log(output1);
+
+
+// another example for reduce()
+const output2 = users.reduce((preVal, curVal) => {
+    if (curVal.age < 30) {
+        preVal.push(curVal.firstName)
+    }
+    return preVal
+}, []);
+
+console.log(output2);
