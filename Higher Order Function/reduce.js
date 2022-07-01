@@ -52,3 +52,23 @@ const output = arr.reduce(function(max, curr){
 }, 0)
 
 console.log(output);
+
+// example for reduce()
+const users = [
+    {firstName: 'akshay', lastName: 'saini', age: 26},
+    {firstName: 'donald', lastName: 'trumph', age: 75},
+    {firstName: 'elon', lastName: 'musk', age: 50},
+    {firstName: 'deepika', lastName: 'padukone', age: 26},
+]
+
+//  acc = {26 : 2, 75: 1, 50 : 1}
+const output1 = users.reduce((acc, curr) => {
+    if (acc[curr.age]) {
+        acc[curr.age] = ++acc[curr.age];
+    } else {
+        acc[curr.age] = 1;
+    }
+    return acc;
+}, {});
+
+console.log(output1);
