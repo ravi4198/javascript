@@ -35,3 +35,17 @@ function binary(x) {
 const output = arr.map((x) => x.toString(2));
 console.log(output);
 
+
+// another Example of map ()
+const users = [
+    {firstName: 'akshay', lastName: 'saini', age: 26},
+    {firstName: 'donald', lastName: 'trumph', age: 75},
+    {firstName: 'elon', lastName: 'musk', age: 50},
+    {firstName: 'deepika', lastName: 'padukone', age: 30},
+]
+
+// list of fullnames
+// ["akshay saini", "donald trumph" ...]
+
+const output1 = users.map((x) => x.firstName + ' ' + x.lastName);
+console.log(output1);
