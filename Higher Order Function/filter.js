@@ -28,3 +28,16 @@ function isEven(x) {
 // const output = arr.filter(greaterThan4);
 const output = arr.filter((x) => x > 4)
 console.log(output);
+
+
+// example for filter()
+// ['akshay', 'deepika']
+const users = [
+  {firstName: 'akshay', lastName: 'saini', age: 26},
+  {firstName: 'donald', lastName: 'trumph', age: 75},
+  {firstName: 'elon', lastName: 'musk', age: 50},
+  {firstName: 'deepika', lastName: 'padukone', age: 26},
+]
+
+const output1 = users.filter((x) => x.age < 30).map((x) => x.firstName);
+console.log(output1);
