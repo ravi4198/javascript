@@ -9,3 +9,16 @@ if (a === undefined) {
 } else {
     console.log('a is not defined');
 }
+
+//  Java Script is loosely coupled language
+var a;
+console.log(a);
+a = 10;
+console.log(a);
+a = 'hello world'
+console.log(a);
+
+
+//  never do this following things (Bad practise)
+a = undefined;
+console.log(a); // undefined
