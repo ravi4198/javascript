@@ -1,2 +1,2 @@
 # javascript
-Demonstration of Various Java Script Technic and methods to solve problems
+Demonstration of Various Java Script features and methods to solve problems
