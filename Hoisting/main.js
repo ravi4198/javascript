@@ -1,11 +1,11 @@
-var x = 7;  // before valueassignment javascript has reserverd the memory and has predefined value is undefined
+// var x = 7;  // before valueassignment javascript has reserverd the memory and has predefined value is undefined
 
-function getName() {
-    console.log("Namaste in JavaScript");
-}
+// function getName() {
+//     console.log("Namaste in JavaScript");
+// }
 
-getName();
-console.log(x);
+// getName();
+// console.log(x);
 
 // Access Before initialization or assign value to variable
 // In most programming it will cause error
@@ -24,3 +24,18 @@ console.log(x);
 // undefined and not defined are not same in javascript
 //
 
+// Analysis call stack
+var x = 1;
+a();
+b();
+console.log(x);
+
+function a() {
+    var x = 10;
+    console.log(x);
+}
+
+function b() {
+    var x = 100;
+    console.log(x);
+}
