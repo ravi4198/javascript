@@ -36,4 +36,4 @@ function a() {
 }
 
 a();
-console.log(b);
+console.log(b);  // b is not available to Global
