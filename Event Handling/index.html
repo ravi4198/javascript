@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling</title>
+    <style>
+        body {
+            background-color: rgb(206, 236, 227);
+            height: auto;
+            width: auto;
+            border: 2px solid rgb(245, 187, 79);
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <h1 onclick="handleClick2()" >Example Heading</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Quod iusto cumque consequatur eveniet, reiciendis porro accusamus voluptatibus enim doloribus dolore veniam? Expedita harum reiciendis rem,
+         et vero laborum exercitationem accusamus?</p>
+    </div>
+
+    <script>
+        const target = document.querySelector('body');
+
+        function handleClick() {
+            console.log('Clicked the body');
+        }
+        target.addEventListener('click', handleClick);
+
+        function handleClick2() {
+            console.log('Clicked the heading');
+        }
+    </script>
+</body>
+</html>
+
+<!-- Open the file using Live Server and open console and see output in log section -->
