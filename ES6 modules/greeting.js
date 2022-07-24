@@ -11,3 +11,5 @@ const greeting = () => {
 }
 
 export default greeting;
+
+// Demonstartion of ES6 module
